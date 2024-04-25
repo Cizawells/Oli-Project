@@ -1,30 +1,17 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
-import { Project } from "@/typings"
-import ProjectCard from "./ProjectCard"
-import ImageViewer from "./image-viewer";
-import img1Path from "@/public/img-1.jpg";
-import img2Path from "@/public/img-2.jpg";
-import img3Path from "@/public/img-3.jpg";
-import img4Path from "@/public/img-4.jpg";
-import img5Path from "@/public/img-5.jpg";
-import img6Path from "@/public/img-6.jpg";
-import Image from "next/image";
 import { useState } from "react";
+import ProjectCard from "./ProjectCard";
+import ImageViewer from "./image-viewer";
 
 type Props = {
   projects: any[]
 }
 
 const images: any[] = [
-  { src: img1Path, alt: "Image 1" },
-  { src: img2Path, alt: "Image 2" },
-  { src: img3Path, alt: "Image 3" },
-  { src: img4Path, alt: "Image 4" },
-  { src: img5Path, alt: "Image 5" },
-  { src: img6Path, alt: "Image 6" },
+  
 ];
 
 

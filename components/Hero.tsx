@@ -2,10 +2,7 @@
 
 import { urlFor } from "@/sanity"
 import { PageInfo } from "@/typings"
-import Link from "next/link"
-import { Cursor, useTypewriter } from "react-simple-typewriter"
-import BackgroundCircles from "./BackgroundCircles"
-import homepagePic from "@/public/homepage_pic.jpg"
+import { useTypewriter } from "react-simple-typewriter"
 
 type Props = {
     pageInfo: PageInfo
@@ -29,7 +26,7 @@ function Hero({ pageInfo }: Props) {
 
           <img
               className="relative  h-80  mx-auto object-cover w-1/2"
-              src={urlFor(pageInfo?.heroImage).width(300).url()} alt="" />
+              src={urlFor(pageInfo?.profilePic).width(300).url()} alt="" />
     </div>
   ) 
 }

@@ -15,14 +15,7 @@ export default defineType({
     title: "Role",
     type: "string",
    },
-   {
-    name: "heroImage",
-    title: "Image",
-    type: "image",
-    options: {
-      hotspot: true
-    }
-   },
+
    {
     name: "backgroundInformation",
     title: "BackgroundInformation",
@@ -51,12 +44,7 @@ export default defineType({
     title: "Address",
     type: "string",
    },
-//    {
-//     name: "socials",
-//     title: "Socials",
-//     type: "array",
-//     of: [{ type: 'reference', to: {type: "social"}}]
-//    },
+
    
    
   ],

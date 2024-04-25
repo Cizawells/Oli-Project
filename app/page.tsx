@@ -1,14 +1,11 @@
 import About from "@/components/About";
 import ContactMe from "@/components/ContactMe";
 import Hero from "@/components/Hero";
-import Skills from "@/components/Skills";
 import WorkExperience from "@/components/WorkExperience";
 import Header from "@/components/header";
 import { Experience, PageInfo, Project, Skill, Social } from "@/typings";
 import { fetchPageInfos } from "@/utils/fetchPageInfos";
 import { fetchProjects } from "@/utils/fetchProjects";
-import { fetchSkills } from "@/utils/fetchSkills";
-import { fetchSocials } from "@/utils/fetchSocials";
 
 
 // import { fetchPageInfos } from "@/utils/fetchPageInfos";
@@ -58,10 +55,10 @@ export default async function Home(
 // }:Props
 ) {
   const pageInfo: PageInfo = await fetchPageInfos();
-  console.log("pagggg", pageInfo)
+  // console.log("pagggg", pageInfo)
   // const skills: Skill[] = await fetchSkills();
   const projects: Project[] = await fetchProjects();
-  // console.log("prooooo", projects)
+  console.log("prooooo", projects)
   // const socials: Social[] =  await fetchSocials();
 
   return (  
@@ -82,7 +79,7 @@ export default async function Home(
       </section> */}
 
     <section id="experience" className="snap-center">
-        {/* <WorkExperience projects={projects} /> */}
+        <WorkExperience projects={projects} />
       </section>
       <section id="contact" className="snap-start">
         <ContactMe pageInfo={pageInfo}/>
