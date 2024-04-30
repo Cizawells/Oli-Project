@@ -1,6 +1,5 @@
 "use client"
 
-import { Social } from "@/typings"
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { SocialIcon } from "react-social-icons"
@@ -33,7 +32,7 @@ const Header = ({
                   <Link href="#skills">
                   <button className="heroButton">Videos</button>
                   </Link>
-                  <Link href="#experience">
+                  <Link href="#photos">
                   <button className="heroButton">Photos</button>
                   </Link>
                   <Link href="#contact">

@@ -1,25 +1,15 @@
 "use client"
 
-import { urlFor } from "@/sanity"
-import { PageInfo } from "@/typings"
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs"
+import { PageInfo } from "@/typings"
+import { motion } from "framer-motion"
+import "../app/globals.css"
+
  
 
 type Props = {
@@ -56,12 +46,12 @@ function About({
               className="hidden lg:block mb-20 md:mb-0 flefx-shrink-0 w-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]"
           /> */}
           <div className=" lg:ml-8 p-6 mt-14  lg:border-solid lg:border-red-50 lg:border-2 w-full">
-          <Tabs defaultValue="account" className="w-full" activationMode="manual">
-      <TabsList className="grid w-full grid-cols-2">
-        <TabsTrigger value="account">Mission</TabsTrigger>
-        <TabsTrigger value="password">Vision</TabsTrigger>
+          <Tabs defaultValue="account" className="w-full TabsRoot" activationMode="manual">
+      <TabsList className="grid w-full grid-cols-2 TabsList" >
+        <TabsTrigger value="account" className="TabsTrigger">Mission</TabsTrigger>
+        <TabsTrigger value="password" className="TabsTrigger">Vision</TabsTrigger>
       </TabsList>
-      <TabsContent value="account">
+      <TabsContent value="account" className="TabsContent">
        <ul>
         <li>Protection de l'environnement par le reboisement des especes exogenes et endogenes.</li>
         <li>Assurer les cours de cuisine amelioree aux femmes.</li>
@@ -72,7 +62,7 @@ function About({
         <li>Protection des filles mere abandonnes et maintenance des enfants  orphelins a la scoralisation.</li>
        </ul>
       </TabsContent>
-      <TabsContent value="password">
+      <TabsContent value="password" className="TabsContent">
       <ul>
         <li>L'identification, la protection des forets naturelles, des especes endogenes envoie de disparition, reboisement  des differentes especes fruitieres et agro-forestieres, afin  de stabiliser l'ecosysteme(biodiversite) se trouvant sur l'etendue du territoire (Ville). En outre la diversification des nouvelles technologies agricoles pour la conservation du sol.</li>
         <li>Reintegration des categories des personnes marginalisees.</li>
