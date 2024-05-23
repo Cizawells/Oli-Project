@@ -36,7 +36,7 @@ const Header = ({
                   <button className="heroButton">Photos</button>
                   </Link>
                   <Link href="#contact">
-                  <button className="heroButton">Contact Me</button>
+                  <button className="heroButton">A PROPOS</button>
                   </Link>
           </div>
               
@@ -63,7 +63,7 @@ const Header = ({
           fgColor="gray"
           bgColor="transparent"
         />
-        <p className="uppercase hiden md:inline-flex text-sm text-gray-400">Get In Touch</p>
+        <p className="uppercase hiden md:inline-flex text-sm text-gray-400">Contactez-nous</p>
       </motion.div>
       </Link>
     </header>

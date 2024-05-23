@@ -63,14 +63,9 @@ reset()
     console.log(errors)
   return (
       <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center ">
-          <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>CONTACT ME</h3>
+          <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>CONTACTEZ-NOUS</h3>
           
           <div className="flex flex-col space-y-18">
-              <h4 className="text-2xl lg:text-4xl font-semibold text-center lg:text-center space-y-4">
-                  I have got just what you need.
-                  <span className="decoration-[#7AB0A]/50 underline text-2xl lg:text-4xl">Lets Talk</span>
-              </h4>
-        
               <div className="space-y-2 mt-4 mb-4">
                   <div className="flex items-center space-x-5 justify-center">
                       <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse"/>
